@@ -26,6 +26,8 @@ echo strpos("Hello world!", "world"); // outputs 6
 echo "<br>";
 echo str_replace("world", "Dolly", "Hello world!"); // outputs Hello Dolly!
 
+//hoc them: https://www.w3schools.com/php/php_ref_string.asp
+
 ?>
 </body>
 </html>
