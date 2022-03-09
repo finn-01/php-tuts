@@ -86,9 +86,15 @@ function test_input($data){
 	<br><br>
 
 	Gender: 
-	<input type="radio" name="gender" value="female">Female
-	<input type="radio" name="gender" value="male">Female
-	<input type="radio" name="gender" value="other">Female
+	<input type="radio" name="gender" value="female"
+	<?php if(isset($gender) && $gender == "female") echo "checked"; ?>
+	>Female
+	<input type="radio" name="gender" value="male"
+	<?php if(isset($gender) && $gender == "male") echo "checked"; ?>
+	>Female
+	<input type="radio" name="gender" value="other"
+	<?php if(isset($gender) && $gender == "other") echo "checked"; ?>
+	>Female
 	<span class="error"> * <?php echo$genderErr; ?></span>
 	<br><br>
 
