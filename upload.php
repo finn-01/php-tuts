@@ -1,7 +1,10 @@
 <?php 
 $target_dir = "uploads/";
+
+//basename: trả về tên tệp từ một đường dẫn.
 $target_file = $target_dir.basename($_FILES['fileToUpload']['name']);
 $uploadOk = 1;
+//pathinfo: trả về thông tin về đường dẫn tệp.
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
 //Check
