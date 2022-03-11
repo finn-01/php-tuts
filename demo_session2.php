@@ -13,6 +13,7 @@ session_start();
 <?php 
 echo "Fav color is " . $_SESSION['favcolor'] . "<br>";
 echo "Fav animal is " . $_SESSION['favanimal'] . "<br>";
+print_r($_SESSION)
 ?>
 </body>
 </html>
