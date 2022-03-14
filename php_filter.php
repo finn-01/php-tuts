@@ -21,6 +21,8 @@ th, td {
 		<td>Filter ID</td>
 	</tr>
 	<?php 
+	//filte_list() la mot mang
+	//filter_id tra ve id cua filter name
 	foreach(filter_list() as $id => $filter){
 		echo '<tr><td>' . $filter . '</td><td>' . filter_id($filter) . '</td></tr>';
 	}
